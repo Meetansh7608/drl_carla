@@ -52,10 +52,6 @@ env = SimEnv(visuals=False)
 
 This call initializes the simulation environment. Set `visuals` to `False` to disable the Pygame window or `True` to enable it along with the simulator.
 
-```python
-model.load('weights/model_ep_200')
-```
-
 Load a trained or pre-trained model for evaluation. The number 200 indicates that this model was trained for 200 episodes. If you've trained your own model for 200 episodes, you'll find the following files in the weights folder:
 
 - `model_ep_200_optimizer`
