@@ -32,7 +32,7 @@ def draw_image(surface, image, blend=False):
     array = array[:, :, :3]
     array = array[:, :, ::-1]
     image_surface = pygame.surfarray.make_surface(array.swapaxes(0, 1))
-    # if blend:
+    if blend:
         # alpha = 0.4
         image_surface.set_alpha(100)
         # blended_image = cv2.addWeighted(array, alpha, surface, 1 - alpha, 0)
